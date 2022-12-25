@@ -1,0 +1,71 @@
+.diffDisplay {
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+
+  & > .diff-container {
+    border: 1px solid #999;
+    resize: none;
+    height: 100%;
+    width: 49%;
+    text-align: center;
+    padding: 0 8px;
+    position: relative;
+
+    & > .title {
+      display: block;
+      height: 40px;
+      width: 100%;
+      padding-top: 4px;
+    }
+
+    & > .text-container {
+      min-height: 300px;
+
+      & > .line {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        &.red {
+          background-color: rgba(255, 0, 0, 0.1);
+        }
+        &.green {
+          background-color: rgba(0, 255, 0, 0.1);
+        }
+
+        & > .line-no {
+          width: 30px;
+          height: 24px;
+          color: #ccc;
+          padding-top: 4px;
+        }
+
+        & > .text {
+          width: calc(100% - 30px);
+          min-height: 24px;
+          text-align: left;
+          padding-top: 2px;
+          white-space: pre-wrap;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+button{
+    padding:8px 16px;
+    font-weight: 500;
+    margin:4px;
+    margin-top: 20px;
+    color:white;
+    border: none;
+    outline:none;
+    border-radius: 4px;
+    &:hover{
+        cursor:pointer;
+    }
+}

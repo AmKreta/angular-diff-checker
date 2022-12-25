@@ -1,0 +1,4 @@
+<div class="container-div">
+    <label *ngIf="label" [htmlFor]="id">{{ label }}</label>
+    <textarea spellcheck="false" mode="javascript" [(ngModel)]="text" ngDefaultControl class="text-input" (ngModelChange)="changeHandler($event)"></textarea>
+</div>

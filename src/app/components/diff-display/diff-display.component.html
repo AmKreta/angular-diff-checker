@@ -1,0 +1,25 @@
+<div class="diffDisplay">
+    <div class="diff-container">
+        <div class="title">Original Text <small>( {{linesRemovedFromText1.size}} deletion )</small></div>
+        <div class="text-container">
+            <div [ngClass]="text1DisplayObj[i]?.removed?'line red':'line'" *ngFor="let z of totalLinesToDisplay; let i=index;">
+                <div class="line-no text-input">{{i}}</div>
+                <div class="text text-input">
+                    {{text1DisplayObj[i]?.val}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="diff-container">
+        <div class="title">Modified Text <small>( {{linesAddedToText2.size}} addition )</small></div>
+        <div class="text-container">
+            <div [ngClass]="text2DisplayObj[i]?.added?'line green':'line'" *ngFor="let z of totalLinesToDisplay; let i=index;">
+                <div class="line-no text-input">{{i}}</div>
+                <div class="text text-input">
+                    {{text2DisplayObj[i]?.val}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="gradient-bg" (click)="clickHandler($event)">Compare with new text</button>

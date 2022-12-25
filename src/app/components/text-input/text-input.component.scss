@@ -1,0 +1,38 @@
+
+$labelHeight:40px;
+$textAreaHeight:calc(100% -  #{$labelHeight});
+$lineNoContainerWidth:30px;
+$textAreaWidth:calc( 100% - #{$lineNoContainerWidth});
+
+
+.container-div{
+    border:1px solid #999;
+    resize: none;
+    height:100%;
+    text-align: center;
+    padding:0 8px;
+
+    &>label{
+        display: block;
+        height: $labelHeight;
+        width:100%;
+        padding-top: 4px;
+    }
+
+    &>textarea{
+        height:$textAreaHeight;
+        width:100%;
+        border:none;
+        outline:none;
+        resize: none;
+        &:hover{
+            cursor:text;
+        }
+    }
+}
+
+:host{
+    display: block;
+    width:49%;
+    height:100%;
+}
