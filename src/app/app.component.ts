@@ -42,6 +42,8 @@ export class AppComponent {
 
 
   clearState() {
+    this.inputText1='';
+    this.inputText2='';
     this.input1Arr = [];
     this.input2Arr = [];
     this.linesRemovedFromText1 = new Set<number>();
