@@ -1,4 +1,4 @@
-Live at :- [https://app.netlify.com/sites/gleeful-souffle-7dddba/overview](https://app.netlify.com/sites/gleeful-souffle-7dddba/overview)
+Live at :- [https://gleeful-souffle-7dddba.netlify.app/](https://gleeful-souffle-7dddba.netlify.app/)
 
 How to run the project
 -
